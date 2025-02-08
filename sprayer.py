@@ -76,5 +76,5 @@ for username in usernames:
 
 # Send all results to the catcher
 #send_data_to_catcher(results, use_ssl=catcher_uses_TLS)
-print(result)
+print(results)
 
