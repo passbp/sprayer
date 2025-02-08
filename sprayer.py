@@ -5,6 +5,11 @@ from urllib3.exceptions import InsecureRequestWarning
 required_env_vars = ["USERNAMES", "PASSWORD", "CATCHERURL", "CATCHERTLS"]
 missing_env_vars = [var for var in required_env_vars if os.getenv(var) is None]
 
+
+url = "https://ipinfo.io"
+result1 = request.get(url)
+print(result1)
+
 if missing_env_vars:
     missing_vars_str = ", ".join(missing_env_vars)
     raise ValueError(f"Missing environment variables: {missing_vars_str}")
