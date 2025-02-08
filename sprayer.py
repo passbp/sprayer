@@ -7,7 +7,7 @@ missing_env_vars = [var for var in required_env_vars if os.getenv(var) is None]
 
 
 url = "https://ipinfo.io"
-result1 = request.get(url)
+result1 = requests.get(url)
 print(result1)
 
 if missing_env_vars:
